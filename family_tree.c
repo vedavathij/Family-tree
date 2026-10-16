@@ -36,6 +36,7 @@ void read_person_info(const char *role, char *name, int *age) {
 
     printf("Enter age for %s: ", role);
     fgets(age_input, 20, stdin);
+    *age = 0;
     sscanf(age_input, "%d", age);
 }
 
