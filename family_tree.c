@@ -105,9 +105,17 @@ printf("- Grandfather: %s | Age: %d\n",
 printf("- Grandmother: %s | Age: %d\n",
        child->mother->mother->name,
        child->mother->mother->age);
+	free(pgf);
+free(pgm);
+free(mgf);
+free(mgm);
+free(father);
+free(mother);
+free(child);
 
     return 0;
 }
+
 
 
 
